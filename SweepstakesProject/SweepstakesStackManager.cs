@@ -9,11 +9,18 @@ namespace SweepstakesProject
     class SweepstakesStackManager
     {
         //Member Variables (HAS A)
+        Stack<Sweepstakes> stack;
 
         //Constructor
 
         //Member Methods (CAN DO)
+        public void InsertSweepStakes(Sweepstakes sweepstakes)
+        {
 
+        }
+        public Sweepstakes GetSweepstakes(Sweepstakes sweepstakes)
+        {
 
+        }
     }
 }

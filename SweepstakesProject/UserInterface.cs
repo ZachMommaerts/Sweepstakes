@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SweepstakesProject
 {
-    class UserInterface
+    static class UserInterface
     {
         //Member Variables (HAS A)
 
@@ -14,6 +14,11 @@ namespace SweepstakesProject
 
         //Member Methods (CAN DO)
 
-
+        public static string GetUserInputFor(string prompt)
+        {
+            Console.WriteLine($"{prompt}");
+            string userInput = Console.ReadLine();
+            return userInput;
+        }
     }
 }

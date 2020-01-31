@@ -13,7 +13,10 @@ namespace SweepstakesProject
         //Constructor
 
         //Member Methods (CAN DO)
+        public void CreateMarketingFirmWithManager()
+        {
 
+        }
 
     }
 }
