@@ -26,27 +26,24 @@ namespace SweepstakesProject
         //Constructor
         public Sweepstakes()
         {
-            contestants = new Dictionary<int, Contestant>();
+            this.name;
         }
 
         //Member Methods (CAN DO)
-        public string SweepstakesName()
-        {
-            name = "SuperBowl Ticket Giveaway";
-            return name;
-        }
+     
         public void RegisterContestant(Contestant contestant)
         {
+            int i = contestants.Count;
             PrintContestantInfo(contestant);
-            contestants.Add(contestant.registrationNumber, contestant);
-
+            contestants.Add(i, contestant);
+            i++;
         }
         public Contestant Pickwinner()
         {
-            int i = contests[i, value];
+            int i = contestants.Count;
             Random random = new Random();
-            random.Next(contestants.Count);
-            return contestants;
+            random.Next(i);
+            return contestants(i, contestant);
         }
         public void PrintContestantInfo(Contestant contestant)
         {

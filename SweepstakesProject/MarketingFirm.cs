@@ -9,18 +9,18 @@ namespace SweepstakesProject
     class MarketingFirm
     {
         //Member Variables (HAS A)
-        ISweepstakesManager manager;
+        ISweepstakesManager _manager;
 
         //Constructor
+        public MarketingFirm(ISweepstakesManager _manager)
+        {
+            this._manager = _manager;
+        }
 
         //Member Methods (CAN DO)
-        public void MarketingFirmManaging(ISweepstakesManager manager)
-        {
-
-        }
         public void CreateSweepstakes()
         {
-
+            _manager.InsertSweepStakes(sweepstakes);
         }
     }
 }

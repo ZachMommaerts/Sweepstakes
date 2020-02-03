@@ -11,11 +11,15 @@ namespace SweepstakesProject
         //Member Variables (HAS A)
 
         //Constructor
+        public Simulation()
+        {
+            new ISweepstakesManager(paul);
+        }
 
         //Member Methods (CAN DO)
         public void CreateMarketingFirmWithManager()
         {
-
+            MarketingFirm marketingFirm = new MarketingFirm();
         }
 
     }
