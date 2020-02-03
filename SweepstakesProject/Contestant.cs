@@ -15,9 +15,13 @@ namespace SweepstakesProject
         public int registrationNumber;
 
         //Constructor
-        public Contestant(string firstName, string lastName, string emailAddress, int registrationNumber)
+        public Contestant()
         {
-
+            firstName = UserInterface.GetUserInputFor("first name");
+            lastName = UserInterface.GetUserInputFor("last name");
+            emailAddress = UserInterface.GetUserInputFor("email address");
+            Random random = new Random();
+            registrationNumber = random.Next(1000);
         }
 
         //Member Methods (CAN DO)

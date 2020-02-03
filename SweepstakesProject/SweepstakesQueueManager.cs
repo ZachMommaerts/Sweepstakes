@@ -9,18 +9,19 @@ namespace SweepstakesProject
     class SweepstakesQueueManager : ISweepstakesManager
     {
         //Member Variables (HAS A)
-        Queue<Sweepstakes> stack;
+        Queue<Sweepstakes> queue;
 
         //Constructor
 
         //Member Methods (CAN DO)
-        public void InsertSweepstakes(Sweepstakes sweepstakes)
+        public void InsertSweepStakes(Sweepstakes sweepstakes)
         {
-
+            queue.Enqueue(sweepstakes);
         }
-        public Sweepstakes GetSweepstakes()
+        public Sweepstakes GetSweepstakes(Sweepstakes sweepstakes)
         {
-
+            sweepstakes = queue.Dequeue();
+            return sweepstakes;
         }
     }
 }

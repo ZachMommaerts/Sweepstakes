@@ -24,6 +24,10 @@ namespace SweepstakesProject
         }
 
         //Constructor
+        public Sweepstakes()
+        {
+            contestants = new Dictionary<int, Contestant>();
+        }
 
         //Member Methods (CAN DO)
         public string SweepstakesName()
@@ -33,20 +37,20 @@ namespace SweepstakesProject
         }
         public void RegisterContestant(Contestant contestant)
         {
-
+            PrintContestantInfo(contestant);
+            contestants.Add(contestant.registrationNumber, contestant);
 
         }
         public Contestant Pickwinner()
         {
+            int i = contests[i, value];
             Random random = new Random();
             random.Next(contestants.Count);
-            return Contestant
+            return contestants;
         }
         public void PrintContestantInfo(Contestant contestant)
         {
-            contestant.firstName = UserInterface.GetUserInputFor("first name");
-            contestant.lastName = UserInterface.GetUserInputFor("last name");
-            contestant.emailAddress = UserInterface.GetUserInputFor("email address");
+            Console.WriteLine($"{contestant.registrationNumber} : {contestant.firstName} {contestant.lastName} : {contestant.emailAddress}");
         }
     }
 }

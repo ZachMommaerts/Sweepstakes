@@ -9,12 +9,12 @@ namespace SweepstakesProject
     class MarketingFirm
     {
         //Member Variables (HAS A)
-        ISweepstakesManager
+        ISweepstakesManager manager;
 
         //Constructor
 
         //Member Methods (CAN DO)
-        public ISweepstakesManager MarketingFirm(ISweepstakesManager manager)
+        public void MarketingFirmManaging(ISweepstakesManager manager)
         {
 
         }
