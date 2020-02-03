@@ -13,6 +13,11 @@ namespace SweepstakesProject
         //Constructor
 
         //Member Methods (CAN DO)
+        void InsertSweepStakes(Sweepstakes sweepstakes)
+        {
+
+        }
+        Sweepstakes GetSweepstakes(Sweepstakes sweepstakes);
 
     }
 }
