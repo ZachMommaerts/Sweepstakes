@@ -11,15 +11,25 @@ namespace SweepstakesProject
         //Member Variables (HAS A)
 
         //Constructor
-        public Simulation()
-        {
-            new ISweepstakesManager(paul);
-        }
 
         //Member Methods (CAN DO)
-        public void CreateMarketingFirmWithManager()
+        public void CreateMarketingFirmWithManager(string userInput)
         {
-            MarketingFirm marketingFirm = new MarketingFirm();
+            ISweepstakesManager _manager = null;
+            UserInterface.GetDataStructurePreference();
+            switch (userInput)
+            {
+                case "queue":
+                    _manager = new SweepstakesQueueManager();
+                    break;
+                case "stack":
+                    _manager = new SweepstakesStackManager();
+                    break;
+                default:
+                    Console.WriteLine("Not a valid option. Please choose again");
+                    CreateMarketingFirmWithManager(userInput);
+                    break;
+            }
         }
 
     }

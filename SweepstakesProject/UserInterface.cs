@@ -20,5 +20,11 @@ namespace SweepstakesProject
             string userInput = Console.ReadLine();
             return userInput;
         }
+        public static string GetDataStructurePreference()
+        {
+            Console.WriteLine($"Please enter if you would like to use stack or queue data structures (type stack or queue)");
+            string userInput = Console.ReadLine();
+            return userInput;
+        }
     }
 }

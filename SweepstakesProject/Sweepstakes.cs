@@ -24,9 +24,10 @@ namespace SweepstakesProject
         }
 
         //Constructor
-        public Sweepstakes()
+        public Sweepstakes(string name)
         {
-            this.name;
+            this.name = name;
+            contestants = new Dictionary<int, Contestant>();
         }
 
         //Member Methods (CAN DO)
@@ -42,11 +43,12 @@ namespace SweepstakesProject
         {
             int i = contestants.Count;
             Random random = new Random();
-            random.Next(i);
-            return contestants(i, contestant);
+            contestants[i] = random.Next(i + 1);
+            return contestants[i];
         }
         public void PrintContestantInfo(Contestant contestant)
         {
+            contestant.registrationNumber = contestants.Count;
             Console.WriteLine($"{contestant.registrationNumber} : {contestant.firstName} {contestant.lastName} : {contestant.emailAddress}");
         }
     }
