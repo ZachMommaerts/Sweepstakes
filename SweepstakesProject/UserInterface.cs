@@ -26,5 +26,11 @@ namespace SweepstakesProject
             string userInput = Console.ReadLine();
             return userInput;
         }
+        public static string GetSweepstakesName()
+        {
+            Console.WriteLine("Please enter the name of the sweepstakes");
+            string userInput = Console.ReadLine();
+            return userInput;
+        }
     }
 }

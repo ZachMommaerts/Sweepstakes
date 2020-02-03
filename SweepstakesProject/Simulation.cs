@@ -13,11 +13,10 @@ namespace SweepstakesProject
         //Constructor
 
         //Member Methods (CAN DO)
-        public void CreateMarketingFirmWithManager(string userInput)
+        public void CreateMarketingFirmWithManager()
         {
-            ISweepstakesManager _manager = null;
-            UserInterface.GetDataStructurePreference();
-            switch (userInput)
+            ISweepstakesManager _manager;
+            switch (UserInterface.GetDataStructurePreference())
             {
                 case "queue":
                     _manager = new SweepstakesQueueManager();
@@ -27,10 +26,9 @@ namespace SweepstakesProject
                     break;
                 default:
                     Console.WriteLine("Not a valid option. Please choose again");
-                    CreateMarketingFirmWithManager(userInput);
+                    CreateMarketingFirmWithManager();
                     break;
             }
         }
-
     }
 }

@@ -20,7 +20,8 @@ namespace SweepstakesProject
         //Member Methods (CAN DO)
         public void CreateSweepstakes()
         {
-            _manager.InsertSweepStakes(Sweepsweepstakes)
+            Sweepstakes sweepstakes = new Sweepstakes(UserInterface.GetSweepstakesName());
+            _manager.InsertSweepStakes(sweepstakes);
         }
     }
 }
