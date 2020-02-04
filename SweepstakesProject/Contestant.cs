@@ -20,7 +20,6 @@ namespace SweepstakesProject
             firstName = UserInterface.GetUserInputFor("first name");
             lastName = UserInterface.GetUserInputFor("last name");
             emailAddress = UserInterface.GetUserInputFor("email address");
-            Random random = new Random();
         }
 
         //Member Methods (CAN DO)
